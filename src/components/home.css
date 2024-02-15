@@ -1,7 +1,8 @@
 .home-container {
     background-color: grey;
-    padding: 20px; /* Add some padding to give space around the content */
-    text-align: center; /* Center align the content */
+    padding: 20px; 
+    text-align: center;
+    height: 100vh;
 }
 .home-container h4, h1 {
     color: whitesmoke;

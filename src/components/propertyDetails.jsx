@@ -1,9 +1,14 @@
     import React, { useState } from 'react';
+    import './propertyDetails.css';
+    import Home from './Home';
+    import { Link } from 'react-router-dom';
+
 
     const property = {
-        name: 'Inside House',
+        name: 'Bubbas Place',
         description: 'Cute House With Everything You Need For The Whole Family',
         photos: [
+            { filename: 'living.jpg', alt: 'living', name: 'Living Room', description: 'Custom Stone Bathroom Getaway.' },
             { filename: 'kitchen.jpg', alt: 'kitchen', name: 'Kitchen', description: 'Custom Stone Bathroom Getaway.' },
             { filename: 'dining.jpg', alt: 'dining', name: 'Dining Room', description: 'Spacious dining area for family gatherings.' },
             { filename: 'bath.jpg', alt: 'bath', name: 'Bathroom', description: 'Luxurious stone bathroom with modern amenities.' },
@@ -23,25 +28,29 @@
         };
 
         return (
-            <div>
-                <h3>Ready For Your Nex Adventure? </h3>
-                <button> Book A Trip At Bubba's Place</button>
-                <div className='m-3'style={{ maxWidth: '100%', maxHeight: '400px', overflow: 'hidden' }}>
-                    {/* Render property photos */}
-                    <img
-                        src={`/images/PropertyDetails/${property.photos[currentPhotoIndex].filename}`}
-                        alt={property.photos[currentPhotoIndex].alt}
-                        style={{ width: '50%', height: 'auto' }} // Adjust width and height as needed
-                    />
+            <div className="property-container">
+                <h2>Ready For Your Next Adventure? </h2>
+                <div className="property-buttons">
+                    <Link to="/reservations">
+                        <button>Book A Trip To Bubba's Place Here</button>
+                    </Link>
                 </div>
-                <div>
-                    <h4>{property.photos[currentPhotoIndex].name}</h4>
-                    <p>{property.photos[currentPhotoIndex].description}</p>
-                </div>
-                <div className='m-3'>
-                    {/* Navigation buttons */}
-                    <button onClick={previousPhoto}>Previous</button>
-                    <button onClick={nextPhoto}>Next</button>
+                <div className="content">
+                        <div className="photo-container">
+                            <img
+                                src={`/images/PropertyDetails/${property.photos[currentPhotoIndex].filename}`}
+                                alt={property.photos[currentPhotoIndex].alt}
+                                style={{ width: '50%', height: 'auto' }}
+                            />
+                        </div>
+                        <div>
+                            <h4>{property.photos[currentPhotoIndex].name}</h4>
+                            <p>{property.photos[currentPhotoIndex].description}</p>
+                        </div>
+                        <div className="property-buttons">
+                            <button onClick={previousPhoto}>Previous Photo</button>
+                            <button onClick={nextPhoto}>Next Photo</button>
+                        </div>
                 </div>
             </div>
         );

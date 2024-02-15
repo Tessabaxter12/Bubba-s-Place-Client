@@ -1,0 +1,8 @@
+.row {
+    background-color: grey;
+    padding: 20px; /* Add some padding to give space around the content */
+    text-align: center; /* Center align the content */
+}
+.row h1, h2, h3 {
+    color: white;
+}

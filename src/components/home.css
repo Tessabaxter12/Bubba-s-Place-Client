@@ -1,0 +1,17 @@
+.home-container {
+    background-color: grey;
+    padding: 20px; /* Add some padding to give space around the content */
+    text-align: center; /* Center align the content */
+}
+.home-container h4, h1 {
+    color: whitesmoke;
+}
+.home-container h1 {
+    color: whitesmoke;
+}
+.pool2 {
+    display: block;
+    margin: 0 auto;
+    width: 400;
+    height: auto; 
+}

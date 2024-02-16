@@ -2,7 +2,7 @@ import './reviews.css';
 import ReviewsIndex from './reviews/ReviewsIndex'
 
 const Reviews = (props) => {
-	const { msgAlert, user } = props
+	const { msgAlert } = props
 	
     return (
 		<div className="review-container">

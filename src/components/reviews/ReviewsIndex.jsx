@@ -30,6 +30,13 @@ const ReviewsIndex = (props) => {
 				console.log('use Effect hook ran')
 				setReviews(res.data.reviews)
 			})
+			.then(() => {
+				msgAlert({
+					heading: 'Success!',
+					message: 'Here Are All The Reviews',
+					variant: 'success'
+				})
+			})
 			.catch(error => {
 				msgAlert({
 					heading: 'Oh No!',
@@ -61,6 +68,11 @@ const ReviewsIndex = (props) => {
 				<Card.Text>
 					<p>Guest Star Rating From 1-5:</p>
 					<StarRating totalStars={review.rating}/>
+				</Card.Text>
+				<Card.Text>
+					<Link to={`/reviews/${reviews.id}`} className='btn btn-info'>
+						View {review.title}
+					</Link>
 				</Card.Text>
 			</Card.Body>
 		</Card>

@@ -15,7 +15,9 @@ import SignIn from './components/auth/SignIn'
 import SignOut from './components/auth/SignOut'
 import ChangePassword from './components/auth/ChangePassword'
 import ReviewShow from './components/reviews/ReviewShow'
-import Reviews from './components/reviews';
+import Reviews from './components/reviews'
+import Reservations from './components/reservations'
+import ReviewCreate from './components/reviews/ReviewCreate'
 
 const App = () => {
 
@@ -73,19 +75,26 @@ const App = () => {
 						</RequireAuth>}
 				/>
 				<Route
-					path='reviews/:reviewId'
+					path='/reviews/:reviewid'
 					element={
 						<ReviewShow user={user} msgAlert={msgAlert}/>
 					}
 				/>
 				<Route
-					path='propertyDetails'
+					path='/reviews/create-review'
+					element={
+						<RequireAuth user={user}>
+							<ReviewCreate user={user} msgAlert={msgAlert}/>
+						</RequireAuth>}
+				/>
+				<Route
+					path='/propertyDetails'
 					element={
 						<PropertyDetails/>
 					}
 				/>
 				<Route
-					path='locationDetails'
+					path='/locationDetails'
 					element={
 						<LocationDetails/>
 					}
@@ -94,6 +103,12 @@ const App = () => {
 					path='/reviews'
 					element={
 						<Reviews/>
+					}
+				/>
+				<Route
+					path='/reservations'
+					element={
+						<Reservations/>
 					}
 				/>
 			</Routes> 

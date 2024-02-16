@@ -15,6 +15,7 @@ import SignIn from './components/auth/SignIn'
 import SignOut from './components/auth/SignOut'
 import ChangePassword from './components/auth/ChangePassword'
 import ReviewShow from './components/reviews/ReviewShow'
+import Reviews from './components/reviews';
 
 const App = () => {
 
@@ -90,9 +91,9 @@ const App = () => {
 					}
 				/>
 				<Route
-					path='reviews'
+					path='/reviews'
 					element={
-						<reviews/>
+						<Reviews/>
 					}
 				/>
 			</Routes> 

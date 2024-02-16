@@ -48,7 +48,7 @@
                             <img
                                 src={`/images/PropertyDetails/${property.photos[currentPhotoIndex].filename}`}
                                 alt={property.photos[currentPhotoIndex].alt}
-                                style={{ width: '70%', height: '50%' }}
+                                style={{ width: '50%', height: '50%' }}
                             />
                         </div>
                         <div>

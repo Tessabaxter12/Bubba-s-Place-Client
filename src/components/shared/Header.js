@@ -5,7 +5,7 @@
 	const linkStyle = {
 		color: '#F5F5F5',
 		textDecoration: 'none',
-		fontSize: '25px'
+		fontSize: '20px'
 	}
 	const authenticatedOptions = (
 		<>
@@ -46,18 +46,18 @@
 				</Link>
 			</Nav.Item>
 			<Nav.Item className='m-3'>
-				<Link to='/reviewss' style={linkStyle}>
+				<Link to='/reviews' style={linkStyle}>
 					Reviews
 				</Link>
 			</Nav.Item>
 			<Nav.Item className='m-3'>
 				<Link to='/propertyDetails' style={linkStyle}>
-					Property
+					Property Details
 				</Link>
 			</Nav.Item>
 			<Nav.Item className='m-3'>
 				<Link to='/locationDetails' style={linkStyle}>
-					Location
+					Location Details
 				</Link>
 			</Nav.Item>
 		</>

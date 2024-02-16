@@ -1,12 +1,7 @@
-.home-container {
+.review-container {
     background-color: grey;
     padding: 20px; 
     text-align: center;
     height: 100vh;
-}
-.home-container h4 {
-    color: whitesmoke;
-}
-.home-container h1 {
     color: whitesmoke;
 }

@@ -1,18 +1,27 @@
 .home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: grey;
-    padding: 20px; 
+    padding: 10px; 
     text-align: center;
-    height: 100vh;
-}
-.home-container h4, h1 {
     color: whitesmoke;
 }
-.home-container h1 {
-    color: whitesmoke;
-}
+
 .pool2 {
     display: block;
     margin: 0 auto;
-    width: 400;
-    height: auto; 
+    width: 1000;
+    height: auto;
+    border: solid rgb(15, 82, 252);
+}
+
+.willowCreek-container {
+    margin: 15px;
+    max-width: 1000px;
+    padding: 15px;
+    background-color: #F5F5F5;
+    color: grey;
+    font-size: 16px;
+    font-weight: bold;
 }

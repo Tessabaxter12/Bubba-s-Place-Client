@@ -14,7 +14,6 @@ const cardContainerLayout = {
 	display: 'flex',
 	flexFlow: 'row wrap',
 	justifyContent: 'center',
-	backgroundColor: 'lightblue'
 }
 
 const ReviewsIndex = (props) => {
@@ -30,13 +29,6 @@ const ReviewsIndex = (props) => {
 			.then(res => {
 				console.log('use Effect hook ran')
 				setReviews(res.data.reviews)
-			})
-			.then(() => {
-				msgAlert({
-					heading: 'Success!',
-					message: 'Here Are All The Reviews',
-					variant: 'success'
-				})
 			})
 			.catch(error => {
 				msgAlert({
@@ -67,14 +59,9 @@ const ReviewsIndex = (props) => {
 					{review.comments}
 				</Card.Text>.
 				<Card.Text>
-					<p>Guest Rating Score From 1-5:</p>
+					<p>Guest Star Rating From 1-5:</p>
 					<StarRating totalStars={review.rating}/>
 				</Card.Text>
-				{ review.owner ?
-					<Card.Footer>owner: {review.owner.email}</Card.Footer>
-					:
-					null
-				}
 			</Card.Body>
 		</Card>
 	))

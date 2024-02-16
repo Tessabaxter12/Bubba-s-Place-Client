@@ -37,7 +37,7 @@
 
         return (
             <div className="property-container">
-                <h2>Ready For Your Next Adventure? </h2>
+                <h1>Ready For Your Next Adventure? </h1>
                 <div className="property-buttons">
                     <Link to="/reservations">
                         <button>Book A Trip To Bubba's Place Here</button>

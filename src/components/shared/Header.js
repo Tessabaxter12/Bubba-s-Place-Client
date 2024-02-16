@@ -4,8 +4,8 @@
 	import { Link } from 'react-router-dom'
 	const linkStyle = {
 		color: '#F5F5F5',
-		fontWeight: 'Bold',
-		textDecoration: 'none'
+		textDecoration: 'none',
+		fontSize: '25px'
 	}
 	const authenticatedOptions = (
 		<>
@@ -46,13 +46,18 @@
 				</Link>
 			</Nav.Item>
 			<Nav.Item className='m-3'>
+				<Link to='/reviewss' style={linkStyle}>
+					Reviews
+				</Link>
+			</Nav.Item>
+			<Nav.Item className='m-3'>
 				<Link to='/propertyDetails' style={linkStyle}>
-					Property Details
+					Property
 				</Link>
 			</Nav.Item>
 			<Nav.Item className='m-3'>
 				<Link to='/locationDetails' style={linkStyle}>
-					Location Details
+					Location
 				</Link>
 			</Nav.Item>
 		</>

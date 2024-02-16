@@ -7,10 +7,9 @@
     padding: 20px; 
     text-align: center;
     height: 100vh;
-}
-.property-container h2 {
     color: whitesmoke;
 }
+
 .content {
     margin: 15px;
     max-width: 800px;

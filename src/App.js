@@ -89,6 +89,12 @@ const App = () => {
 						<LocationDetails/>
 					}
 				/>
+				<Route
+					path='reviews'
+					element={
+						<reviews/>
+					}
+				/>
 			</Routes> 
 			{msgAlerts.map((msgAlert) => (
 				<AutoDismissAlert
